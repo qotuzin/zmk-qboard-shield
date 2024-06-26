@@ -1,0 +1,5 @@
+config SHIELD_QBOARD_LEFT
+    def_bool $(shields_list_contains,qboard_left)
+
+config SHIELD_QBOARD_RIGHT
+    def_bool $(shields_list_contains,qboard_right)

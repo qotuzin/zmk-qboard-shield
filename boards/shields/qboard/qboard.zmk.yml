@@ -1,0 +1,12 @@
+file_format: "1"
+id: qboard
+name: qBoard by Tashi Visschedijk
+type: shield
+url: https://github.com/qotuzin/zmk-qboard-shield
+requires: [pro_micro]
+# exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - qboard_left
+  - qboard_right
