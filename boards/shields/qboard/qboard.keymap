@@ -29,12 +29,14 @@
 // |    Q    |    W    |    F    |    P    |    B    |  |    J    |    L    |    U    |    Y    |    ;    |
 // |    A    |    R    |    S    |    T    |    G    |  |    M    |    N    |    E    |    I    |    O    |
 // |    Z    |    X    |    C    |    D    |    V    |  |    K    |    H    |    ,    |    .    |    /    |
+// --------------------------------------------------------------------------------------------------------
 //                     |   ESC   |  SPACE  |   TAB   |  |  ENTER  |   BSPC  |  R ALT  |
+//                     ------------------------------------------------------------------------------------
             bindings = <
     &kp Q    &kp W    &kp F     &kp P     &kp B             &kp J     &kp L      &kp U     &kp Y     &kp SEMI   
     &kp A    &kp R    &kp S     &kp T     &kp G             &kp M     &kp N      &kp E     &kp I     &kp O
     &kp Z    &kp X    &kp C     &kp D     &kp V             &kp K     &kp H      &kp COMMA &kp DOT   &kp FSLH
-               &kp ESC  &mt LGUI SPACE  &lt NUM TAB       &lt SYM RET  &skq LSHIFT  &to NAV
+         &mt LCTRL ESC  &lt NUM SPACE  &mt LGUI TAB       &mt LSHFT RET  &lt SYM BSPC  &to NAV
             >;
         };
         symbols_layer {
@@ -48,17 +50,17 @@
         numbers_layer {
             bindings = <
     &none      &none    &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp STAR  &kp N7    &kp N8    &kp N9    &kp EQUAL   
-    &sk LGUI   &sk LALT &sk LSHFT &sk RCTRL &none               &kp FSLH  &kp N4    &kp N5    &kp N6    &kp PLUS
+    &sk LGUI   &sk LALT &sk LSHFT &sk LCTRL &none               &kp FSLH  &kp N4    &kp N5    &kp N6    &kp PLUS
     &caps_word &none    &none     &none     &none               &kp RET   &kp N1    &kp N2    &kp N3    &kp MINUS
                        &trans   &trans     &trans               &kp RET   &kp BSPC  &kp N0
             >;
         };
         navigation_layer {
             bindings = <
-    &none     &none    &none     &sys_reset  &bootloader          &bootloader &sys_reset &kp N8    &kp N9    &kp DEL
-    &none     &none    &none     &none       &none                &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT &kp BSPC
+    &kp ESC   &none    &none     &none       &bootloader          &bootloader &none      &none     &none     &kp DEL
+    &sk LGUI   &sk LALT &sk LSHFT &sk LCTRL  &none                &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT &kp ESC
     &none     &none    &none     &none       &none                &kp HOME    &kp PG_DN  &kp PG_UP &kp END   &none
-                       &trans   &trans       &trans               &trans      &trans     &to DEF
+                       &trans   &trans       &trans               &trans      &kp BSPC   &trans
             >;
         };
     };
