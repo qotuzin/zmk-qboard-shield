@@ -68,7 +68,7 @@
                 &kp Q    &kp W    &kp F     &kp P     &kp B             &kp J     &kp L      &kp U     &kp Y     &kp SEMI
                 &kp A    &kp R    &kp S     &kp T     &kp G             &kp M     &kp N      &kp E     &kp I     &kp O
                 &kp Z    &kp X    &kp C     &kp D     &kp V             &kp K     &kp H      &kp COMMA &kp DOT   &kp FSLH
-                        &mt LCTRL ESC  &tmt LGUI SPACE   &lt NUM TAB       &lt SYM RET  &bmt LSHFT BSPC  &lt NAV &kp DEL
+                        &mt LCTRL ESC  &tmt LGUI SPACE   &lt NUM TAB       &lt SYM RET  &bmt LSHFT BSPC  &kp DEL
             >;
         };
         symbols_layer {
@@ -91,7 +91,7 @@
             bindings = <
                 &kp ESC   &none    &none     &none       &bootloader          &bootloader &none      &none     &none     &kp DEL
                 &sk LGUI   &sk LALT &sk LSHFT &sk LCTRL  &none                &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT &kp ESC
-                &none     &none    &none     &none       &none                &kp HOME    &kp PG_DN  &kp PG_UP &kp END   &to NAV
+                &none     &none    &none     &none       &none                &kp HOME    &kp PG_DN  &kp PG_UP &kp END   &none
                                    &trans    &trans      &trans               &trans      &trans     &none
             >;
         };
