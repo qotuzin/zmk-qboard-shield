@@ -10,17 +10,17 @@
 #define FUN 4
 
 / {
-    macros {
-        delete_word: delete_word {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp BSPC>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-    };
+    // macros {
+    //     delete_word: delete_word {
+    //         compatible = "zmk,behavior-macro";
+    //         #binding-cells = <0>;
+    //         bindings
+    //             = <&macro_press &kp LCTRL>
+    //             , <&macro_tap &kp BSPC>
+    //             , <&macro_release &kp LCTRL>
+    //             ;
+    //     };
+    // };
 
     behaviors {
         hm: homerow_mods {
