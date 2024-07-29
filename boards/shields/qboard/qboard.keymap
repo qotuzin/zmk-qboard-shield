@@ -55,6 +55,14 @@
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
         };
+        ldw: layer_delete_word {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&delete_word>;
+        };
         skq: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <1>;
@@ -80,7 +88,7 @@
                 &kp Q    &kp W    &kp F     &kp P     &kp B             &kp J     &kp L      &kp U     &kp Y     &kp SEMI
                 &kp A    &kp R    &kp S     &kp T     &kp G             &kp M     &kp N      &kp E     &kp I     &kp O
                 &kp Z    &kp X    &kp C     &kp D     &kp V             &kp K     &kp H      &kp COMMA &kp DOT   &kp FSLH
-                        &mt LCTRL ESC  &tmt LGUI SPACE   &lt NUM TAB       &lt SYM RET  &bmt LSHFT BSPC  &lt NAV DEL
+                        &mt LCTRL ESC  &tmt LGUI SPACE   &lt NUM TAB       &lt SYM RET  &bmt LSHFT BSPC  &ldw NAV 0
             >;
         };
         symbols_layer {
