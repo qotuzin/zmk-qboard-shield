@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-// #include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define DEF 0
 #define SYM 1
@@ -68,7 +68,7 @@
                 &kp Q    &kp W    &kp F     &kp P     &kp B             &kp J     &kp L      &kp U     &kp Y     &kp SEMI   
                 &kp A    &kp R    &kp S     &kp T     &kp G             &kp M     &kp N      &kp E     &kp I     &kp O
                 &kp Z    &kp X    &kp C     &kp D     &kp V             &kp K     &kp H      &kp COMMA &kp DOT   &kp FSLH
-                        &mt LCTRL ESC  &tmt LGUI SPACE   &lt NUM TAB       &lt SYM RET  &bmt LSHFT BSPC  &lt NAV &kp LCTRL(BSPC)
+                        &mt LCTRL ESC  &tmt LGUI SPACE   &lt NUM TAB       &lt SYM RET  &bmt LSHFT BSPC  &lt NAV &kp DEL
             >;
         };
         symbols_layer {
@@ -95,13 +95,13 @@
                                    &trans    &trans      &trans               &trans      &trans     &none
             >;
         };
-        function_layer {
-            bindings = <
-                &none      &none    &none     &none     &none               &none    &kp N7    &kp F8    &kp F9    &kp F12
-                &sk LGUI   &sk LALT &sk LSHFT &sk LCTRL &none               &none    &kp F4    &kp F5    &kp F6    &kp F11
-                &none      &none    &none     &none     &none               &none    &kp F1    &kp F2    &kp F3    &kp F10
-                                    &trans    &trans    &trans              &none    &kp BSPC  &to DEF
-            >;
-        };
+        // function_layer {
+        //     bindings = <
+        //         &none      &none    &none     &none     &none               &none    &kp N7    &kp F8    &kp F9    &kp F12
+        //         &sk LGUI   &sk LALT &sk LSHFT &sk LCTRL &none               &none    &kp F4    &kp F5    &kp F6    &kp F11
+        //         &none      &none    &none     &none     &none               &none    &kp F1    &kp F2    &kp F3    &kp F10
+        //                             &trans    &trans    &trans              &none    &kp BSPC  &to DEF
+        //     >;
+        // };
     };
 };
