@@ -19,7 +19,7 @@
             bindings = <&kp ESC>;
         };
         combo_w {
-            key-positions = <10, 11>;
+            key-positions = <10 11>;
             bindings = <&kp W>;
         };
     };
