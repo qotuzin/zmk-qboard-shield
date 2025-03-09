@@ -11,6 +11,15 @@
 #define GME 5
 
 / {
+    combos {
+        compatable = "zmk,combos";
+        combo_escape {
+            timeout-ms = <50>;
+            key-positions = <0, 1>
+            bindings = <&kp ESC>;
+        };
+    };
+
     macros {
         delete_word: delete_word {
             compatible = "zmk,behavior-macro";
