@@ -10,19 +10,18 @@
 #define FUN 4
 #define GME 5
 
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+
 / {
     combos {
         compatible = "zmk,combos";
-        combo_w1 {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp W>;
-        };
-        combo_w {
-            timeout-ms = <50>;
-            key-positions = <5 6>;
-            bindings = <&kp W>;
-        };
+        COMBO(w, &kp W, 10 11)
     };
 
     macros {
