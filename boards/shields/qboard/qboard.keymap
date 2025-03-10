@@ -48,8 +48,9 @@
         COMBO(comma, &kp COMMA, 12 17)
         COMBO(period, &kp DOT, 11 18)
 
-        COMBO(tab, &kp TAB, 10 11 12 13)
-        COMBO(return, &kp RET, 16 17 18 19)
+        // COMBO(backspace, &kp BSPC, 13 16)
+        // COMBO(tab, &kp TAB, 10 11 12 13)
+        // COMBO(return, &kp RET, 16 17 18 19)
     };
 
     macros {
@@ -172,13 +173,13 @@
                 &kp LCTRL  &kp Z    &kp X     &kp C     &kp V             &kp K     &kp H      &kp COMMA &kp DOT   &kp FSLH
                         &kp ESC     &kp SPACE  &kp TAB                     &lt NUM RET  &kp BSPC  &ldw NAV 0
             >;
-        chording_layer {
-            bindings = <
-                &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-                &kp A  &kp R  &kp S  &kp T  &none    &none  &kp N  &kp E  &kp I  &kp O
-                &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-                        &to DEF  &kp SPACE  &none    &none  &kp LSHFT  &none
-            >;
+        // chording_layer {
+        //     bindings = <
+        //         &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+        //         &kp A  &kp R  &kp S  &kp T  &none    &none  &kp N  &kp E  &kp I  &kp O
+        //         &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+        //                 &to DEF  &kp SPACE  &none    &none  &kp LSHFT  &none
+        //     >;
         };
     };
 };
