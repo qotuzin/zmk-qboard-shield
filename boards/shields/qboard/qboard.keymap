@@ -21,12 +21,15 @@
 / {
     combos {
         compatible = "zmk,combos";
-        COMBO(w, &kp w, 10 11)
-        COMBO(f, &kp f, 11 12)
-        COMBO(p, &kp p, 12 13)
-        COMBO(l, &kp w, 14 15)
-        COMBO(u, &kp f, 15 16)
-        COMBO(y, &kp p, 16 17)
+        COMBO(q, &kp Q, 10 15)
+        COMBO(w, &kp W, 10 11)
+        COMBO(f, &kp F, 11 12)
+        COMBO(p, &kp P, 12 13)
+        COMBO(b, &kp B, 13 15)
+        COMBO(j, &kp J, 12 14)
+        COMBO(l, &kp W, 14 15)
+        COMBO(u, &kp F, 15 16)
+        COMBO(y, &kp P, 16 17)
     };
 
     macros {
