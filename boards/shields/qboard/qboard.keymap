@@ -21,7 +21,7 @@
 / {
     combos {
         compatible = "zmk,combos";
-        COMBO(q, &kp Q, 10 17)
+        COMBO(q, &kp Q, 10 16)
         COMBO(w, &kp W, 10 11)
         COMBO(f, &kp F, 11 12)
         COMBO(p, &kp P, 12 13)
@@ -30,6 +30,21 @@
         COMBO(l, &kp L, 16 17)
         COMBO(u, &kp U, 17 18)
         COMBO(y, &kp Y, 18 19)
+        COMBO(semicolon, &kp SEMI, 13 19)
+        COMBO(slash, &kp FSLH, 12 19)
+
+        COMBO(g, &kp G, 10 13)
+        COMBO(m, &kp M, 16 19)
+
+        COMBO(z, &kp Z, 10 17)
+        COMBO(x, &kp X, 11 17)
+        COMBO(c, &kp C, 10 12)
+        COMBO(d, &kp D, 11 13)
+        COMBO(v, &kp V, 13 18)
+        COMBO(k, &kp K, 11 16)
+        COMBO(h, &kp H, 16 18)
+        COMBO(comma, &kp COMMA, 12 17)
+        COMBO(period, &kp DOT, 11 18)
     };
 
     macros {
