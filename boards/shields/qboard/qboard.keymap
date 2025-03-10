@@ -8,7 +8,7 @@
 #define NUM 2
 #define NAV 3
 #define FUN 4
-#define GME 5
+#define GAM 5
 #define CHD 6
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
