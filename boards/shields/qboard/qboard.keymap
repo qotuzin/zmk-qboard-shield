@@ -11,6 +11,7 @@
 #define GAM 5
 #define CHD 6
 
+// Macro for easy combo definitions
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     timeout-ms = <50>; \
@@ -47,7 +48,7 @@
         COMBO(comma, &kp COMMA, 12 17)
         COMBO(period, &kp DOT, 11 18)
 
-        COMBO(return, &kp TAB, 10 11 12 13)
+        COMBO(tab, &kp TAB, 10 11 12 13)
         COMBO(return, &kp RET, 16 17 18 19)
     };
 
