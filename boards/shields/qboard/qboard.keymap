@@ -44,7 +44,7 @@
         COMBO(j, &kp J, 12 16)
         COMBO(j2, &kp J, 16 18 19)
         COMBO(l, &kp L, 16 17)
-        COMBO(u, &kpsU, 17 18)
+        COMBO(u, &kp U, 17 18)
         COMBO(y, &kp Y, 18 19)
         COMBO(semicolon, &kp SEMI, 13 19)
         // Bottom Right
