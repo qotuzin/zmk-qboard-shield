@@ -59,7 +59,7 @@
         COMBO(m, &kp M, 16 19)
         // Command Keys
         COMBO(backspace, &kp BSPC, 13 16)
-        COMBO(delete_word, &kp delete_word, 16 17 18)
+        COMBO(deleteword, &delete_word, 16 17 18)
         COMBO(return, &kp RET, 16 17 18 19)
         COMBO(tab, &kp TAB, 10 11 12 13 31)
     };
