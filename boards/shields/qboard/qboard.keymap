@@ -30,7 +30,7 @@
         COMBO(f, &kp F, 11 12)
         COMBO(p, &kp P, 12 13)
         COMBO(b, &kp B, 13 17)
-        COMBO(b2, &kp B, 10 11 13)
+        COMBO(b2, &kp B, 10 12 13)
         // Bottom Left
         COMBO(z, &kp Z, 10 17)
         COMBO(z2, &kp Z, 10 11 12)
@@ -39,17 +39,17 @@
         COMBO(c, &kp C, 10 12)
         COMBO(d, &kp D, 11 13)
         COMBO(v, &kp V, 13 18)
-        COMBO(v2, &kp V, 10 12 13)
+        COMBO(v2, &kp V, 10 11 13)
         // Top Right
         COMBO(j, &kp J, 12 16)
-        COMBO(j2, &kp J, 16 18 19)
+        COMBO(j2, &kp J, 16 17 19)
         COMBO(l, &kp L, 16 17)
         COMBO(u, &kp U, 17 18)
         COMBO(y, &kp Y, 18 19)
         COMBO(semicolon, &kp SEMI, 13 19)
         // Bottom Right
         COMBO(k, &kp K, 11 16)
-        COMBO(k2, &kp K, 16 17 19)
+        COMBO(k2, &kp K, 16 18 19)
         COMBO(h, &kp H, 16 18)
         COMBO(comma, &kp COMMA, 12 17)
         COMBO(period, &kp DOT, 11 18)
@@ -59,6 +59,7 @@
         COMBO(m, &kp M, 16 19)
         // Command Keys
         COMBO(backspace, &kp BSPC, 13 16)
+        COMBO(delete_word, &kp delete_word, 16 17 18)
         COMBO(return, &kp RET, 16 17 18 19)
         COMBO(tab, &kp TAB, 10 11 12 13 31)
     };
