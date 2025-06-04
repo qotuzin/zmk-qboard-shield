@@ -60,7 +60,7 @@
         COMBO(tab, &kp TAB, 10 11 12 13 31)
 
         // Briefs
-        COMBO(the, &kp T &kp H &kp E, 13 16 18)
+        COMBO(the, &brief_the, 13 16 18)
         
     };
 
@@ -74,6 +74,15 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
+        brief_the: brief_the {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp T>
+                , <&macro_tap &kp H>
+                , <&macro_tap &kp E>
+                ;
+        }
     };
 
     behaviors {
