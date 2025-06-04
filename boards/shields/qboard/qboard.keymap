@@ -82,7 +82,7 @@
                 , <&macro_tap &kp H>
                 , <&macro_tap &kp E>
                 ;
-        }
+        };
     };
 
     behaviors {
